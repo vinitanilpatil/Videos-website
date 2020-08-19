@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best youtube videos!</title>
+    <meta name="description" content="Best youtube videos are here.If you liked our videos please subscribe on our 
+    channel.VC real bites.">
+    <meta name="robots" content="index,follow">
+    <!--<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">-->
+    <style>@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        .logo {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .logo img {
+            width: 33%;
+            border: 3px solid white;
+            border-radius: 50px;
+        }
+        
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+            
+        }
+        
+        .unorderedlist {
+            width: 70%;
+        
+            display: flex;
+            align-items: center;
+        }
+        
+        .unorderedlist li {
+            list-style: none;
+            padding: 26px 36px;
+        
+        }
+        
+        .unorderedlist li a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .unorderedlist li a:hover {
+            text-decoration: none;
+            color: grey;
+        }
+        
+        .rightnav {
+            width: 30%;
+            text-align: right;
+            padding: 0 23px;
+        }
+        
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+        }
+        
+        .background {
+            background: rgba(0, 0, 0, 0.7) url('https://lh3.googleusercontent.com/zlF_g8X9Igf6LtOrGnHIk2ixzsb1NKt16HM8dO6lMXKKeBr9yZzd-v7daAJsbdR2Beb0PEJwZlve3n4pISWf9eniEa7AqFTlmT6Ap2r1OoWNYNxwU599V3wXYnqyEn71TL1rNu6EKn4iOWDG7q9Y8ys68RQ10UfL7qi3QD4whXnzhqwaPnvUJT7AHqxGOufaOdNApMwV-kgOKZdxqhOBYEoigOaq9asfa29La-KnQfVGHNFz4UZ5wqYo-2ywObaGCKMi3JpJ-iuXOtD7oN_6GQp8eu5143hhhuZx7pPucM0EDOi5bSLR1nJSor-wps-MWx2Y981YDpmDHvsN-UJhWd1Nz60aq__F5Nc_jh0VZfPrjajF2hcyVT0-MGXvlBxIFPKP698m7YaU038gN6b3Tm1Uh6FZiu0Vn5lMHRKEmGJ-okBXy15nn1DRNpTCkJUuzkEH2k6W4Mg4OG_3NYOjVCqSfck9rf4EphjMAB9XCyCUaCXkU8dYUnrUhNb1rXLUMj4fsfqIpnhbRCUiY5eSaXJqcOLcP6ot5G0IwG1O98m82zrZzAT5P_eVNqLKAuITl7FH8UO59p7VEdwgwOxVuyl8T7GkhX1GdSBuJ1yYoIzbjvZiRP7UwdIEviHio7O6PpwkCGqx7TItQtocC2XBjfMONGaRPIEXAd7qGYJCrsCykj11Hsq_CxkW7FubYg=w600-h689-no?authuser=0');
+            background-size: cover;
+            background-blend-mode: darken;
+        }
+        
+        .firstsection {
+            height: 100vh;
+        }
+        
+        .box-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 50%;
+            margin: auto;
+            height: 80%;
+        }
+        
+        .firsthalf {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .secondhalf {
+            width: 30%;
+        }
+        
+        .secondhalf img {
+            width: 70%;
+            border: 4px solid white;
+            border-radius: 30px;
+            display: block;
+            margin: auto;
+        }
+        
+        .text-big {
+            font-size: 40px;
+        }
+        
+        .text-small {
+            font-size: 18px;
+        }
+        
+        .btn {
+            padding: 8px 20px;
+            margin: 7px 3px;
+            border: 2px solid white;
+            border-radius: 8px;
+            background: none;
+            color: white;
+            cursor: pointer;
+        
+        }
+        
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+        }
+        
+        .btn-dark {
+            color: black;
+            border: 2px solid black;
+        }
+        
+        .section {
+            display: flex;
+            
+            align-items: center;
+            justify-content: space-evenly;
+            max-width: 80%;
+            margin: auto;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        
+        .paras {
+            padding: 0px 65px;
+        }
+        
+        .section-left {
+            flex-direction: row-reverse;
+        }
+        
+        .sectionsubtag {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .thumbnail img {
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 26px;
+            margin: auto
+        }
+        
+        .contact {
+            background-color: #f6f5f4;
+            height: 833px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        
+        .text-center {
+            text-align: center;
+            padding: 30px;
+            font-size: 34px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        
+        .form {
+            max-width: 62%;
+            margin: 42px auto;
+        }
+        
+        .form-input {
+            margin: 14px 0;
+            padding: 5px 3px;
+            width: 100%;
+            font-size: 19px;
+            border: 2px solid grey;
+            border-radius: 6px;
+        
+        }
+        
+        .text-footer {
+            text-align: center;
+            padding: 30px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        
+        .burger {
+            display:none;
+            position: absolute;
+            cursor: pointer;
+            right: 5%;
+            top: 15px;
+        }
+        
+        .line {
+            width: 33px;
+            background-color: white;
+            height: 4px;
+            margin: 5px 3px;
+        }</style>
+        <style>@media only screen and (max-width: 1140px) {
+            .unorderedlist {
+                flex-direction: column;
+            }
+        
+            .navbar {
+                flex-direction: column;
+                transition:all 0.7s ease-out;
+                height: 447px;
+            }
+        
+            .rightnav {
+                text-align: center;
+            }
+            .box-main{
+                max-width: 100%;
+                flex-direction: column-reverse;
+            }
+        
+            #search {
+                width: 100%;
+            }
+            .burger {
+                display:block;
+            }
+            .h-nav-resp{
+                height: 72px;
+            }
+            .v-class-resp{
+                opacity: 0;
+            }
+            .section{
+                flex-direction: column-reverse;
+            }
+            .paras{
+                padding: 0px;
+            }
+        }
+        /*https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTV6eDwUi6NTkQxqJ-_Y8R-45eDwwwzk4wdRw&usqp=CAU*/</style>
+        
+    <link rel="shortcut icon" href="C:\Users\cyberpoint\Desktop\scan\Html and css\css\images.png">
+</head>
+
+
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="unorderedlist v-class-resp">
+            <div class="logo"><img src="C:\coding\Videos Websites\images.png" alt="logo">
+
+            </div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#back">Services</a></li>
+            <li><a href="#contactus">contact us</a></li>
+        </ul>
+        <div class="rightnav v-class-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <div id="home">
+        <section class="background firstsection">
+            <div class="box-main">
+                <div class="firsthalf">
+                    <p class="text-big">The future of creation is here.</p>
+                    <p class="text-small">The future of creation is here.We are providing best videos from us on the
+                        channel.
+                        please watch the vidoes and give likes to the video if you like it.
+                    <div class="buttons">
+                        <a href="https://www.youtube.com/watch?v=BOzkLcFq4Mc&t=5s"><button class="btn" id="subscribe">share</button></a>
+                        <a href="https://www.youtube.com/watch?v=BOzkLcFq4Mc&t=5s"><button class="btn" id="watch">Watch
+                                Video</button></a>
+                    </div>
+                    </p>
+                </div>
+
+                <div class="secondhalf">
+                    <img src="https://lh3.googleusercontent.com/iCcorQ-x16d6Xm_NsWCJX9EQzI578jcuQs2Awok8fUoO1RrLYtG_Cz8ZeleissDw41UF4btScQ72PlWwBykyYeZxHrc9xzNea-VKoIrrIu1a2aObyON4eNGaFO43vSuLUSNZjr6_kBcsMGmEP3E5s_oiLM377oktk3c2_FOhBeWcoJ3oYxa0U65Q1tqmigMOr4TN4XzH_cy1WxqZoyWfUot3fBPCAwHTJInivak0KC5lCQ8VFkf__4oB6K4GsOMy2ur5NMPWAzK5U0sNIh8kLwImNt_osy-_6qJ7WkDcwty2XpKjuVrgsXhbb2PyHy-KcG2kosebiKk6qiksln3z5G7s5N4DSWpSRirVpUV-lHDgnMOoSCCP3tUMJY22YjMsqHvQEmvuxP5YH9M7nugmda-ROGRFnDy1ROZvsoWBmTSTemu_JnK44hvtieh51EgdT_ZjVOZd9Gnl8H2bCSQewb6D8OWzHsG-eGpiVA-TiVooaJsl7USsiBwfHCKhy3CLxpxXmxlyyGbgq5a5pw0b95wXYPcNVbNiCEnYzTqr_eYd8AMl3No1ZfWFHPdoF8tyXbT44Pee9HH6TKAk-8xt-Ei2AdYfAMThiwB6EjH6P7eQjGotUWvWIKYnzximD5HmR1ecmS8l3b_YafA7wAG2rzVBbQx3tsyUDQyOiMATkYqZecZLXA4foE9lmczUPw=w238-h287-no?authuser=0"
+                        alt="Smiley">
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="back">
+        <section class="section">
+            <div class="paras">
+
+                <p class="sectiontag text-big">Why creativity is impotant?</p>
+                <p class="sectionsubtag text-small">Creativity is the ability of a person or group to make something new
+                    and useful or valuable, or the process of making something new and useful or valuable. It happens in
+                    all areas of life - science, art, literature and music. As a personal ability it is very difficult
+                    to measure. The reason is that we don't understand the mental processes that help some people be
+                    more creative than others. Judging what is creative is also controversial. Some people say only
+                    things which are historically new are creative, while other people say that if it is new for the
+                    creator and the people around them, then it is also creativity.</p>
+            </div>
+            <div class="thumbnail">
+                <img src="https://lh3.googleusercontent.com/yZ1hpSnUgcyqn3yTV0v6zk2boj1GAsim55PkSRawAW3rHsZFX6SJTguKE_myGqkKgy4mbqMNrhZtCgGk-sn55lMavSJ52ruo2qPa0aWCZnFMP6Ymw695l-LdOauMINA3IE66E3P2s8zkYvR28Q0NURapX_OmUrhkSPn2-Dueug5d4KPod4g3XjNWTGeSj04apblzPSARG_1azAsNlDTiHybXwdJ-T0gxi-IUDxfF9PiPU6RrxEAFrRHA9rBhqRC_Y6lXNHnOheizTbDPznQt3efRIvsxR2AsRL3FI31tR7dcoIZdami265odc4i8MthTsS3WwzzBAYRwJDfW7bo4rIR45G8IB3hgLG0oLjiM5OJA-l8RbUp3VhhJMRcQeRbP8vVfYUxjXj1_GFSnYaEetIEpvRL4mjwD2bpigj_Jf_3QmSeMK9ltSV747MKktxxkUfZ8-YFlScYeKUbZ0Yzu4DFYoSt7HjdW0ECELd-0UFA1px77hZWgkdJTc2Yq9suJVccPSAyAEZcFIQpnR43yg4Z0LOQ492X5ocRRgWanrs8gqik_44VLDpRGQ0bgplxO6-kOh8om4ha0zqhmc4nBAw7VgqdFhLvDVzbYD-065l1vxJbZ4d-ws2T1N2bnWE9q5Qs7DEuovysudRHvESZInEKDzEct_rDA-Rnta87pR7NGb9hOUL5GyxntJ35RIA=w182-h213-no?authuser=0"
+                    alt="mini diary" class="imgfluid">
+            </div>
+
+        </section>
+        <section class="section section-left">
+            <div class="paras">
+                <p class="sectiontag text-big">What is creativity?</p>
+                <p class="sectionsubtag text-small">Some think that creativity is an important thing that makes humans
+                    different from apes. Others recognize that even apes, other primates, other mammals and some birds
+                    adapt to survive by being creative (for example - primates using tools). Liane Gabora believes that
+                    all culture comes from creativity, not imitation. Therefore, these people say, human science should
+                    focus on it (pay special attention to it): Ethics for example would focus on finding creative
+                    solutions to ethical dilemmas. Politics would focus on the political virtues that need some
+                    creativity. Imitation would not be the focus of education. Linguistics might be more interested in
+                    how new words are created by culture, rather than in how existing ones are used in grammar.</p>
+            </div>
+            <div class="thumbnail">
+                <img src="https://lh3.googleusercontent.com/yZ1hpSnUgcyqn3yTV0v6zk2boj1GAsim55PkSRawAW3rHsZFX6SJTguKE_myGqkKgy4mbqMNrhZtCgGk-sn55lMavSJ52ruo2qPa0aWCZnFMP6Ymw695l-LdOauMINA3IE66E3P2s8zkYvR28Q0NURapX_OmUrhkSPn2-Dueug5d4KPod4g3XjNWTGeSj04apblzPSARG_1azAsNlDTiHybXwdJ-T0gxi-IUDxfF9PiPU6RrxEAFrRHA9rBhqRC_Y6lXNHnOheizTbDPznQt3efRIvsxR2AsRL3FI31tR7dcoIZdami265odc4i8MthTsS3WwzzBAYRwJDfW7bo4rIR45G8IB3hgLG0oLjiM5OJA-l8RbUp3VhhJMRcQeRbP8vVfYUxjXj1_GFSnYaEetIEpvRL4mjwD2bpigj_Jf_3QmSeMK9ltSV747MKktxxkUfZ8-YFlScYeKUbZ0Yzu4DFYoSt7HjdW0ECELd-0UFA1px77hZWgkdJTc2Yq9suJVccPSAyAEZcFIQpnR43yg4Z0LOQ492X5ocRRgWanrs8gqik_44VLDpRGQ0bgplxO6-kOh8om4ha0zqhmc4nBAw7VgqdFhLvDVzbYD-065l1vxJbZ4d-ws2T1N2bnWE9q5Qs7DEuovysudRHvESZInEKDzEct_rDA-Rnta87pR7NGb9hOUL5GyxntJ35RIA=w182-h213-no?authuser=0"
+                    alt="mini diary" class="imgfluid">
+            </div>
+    </div>
+    </section>
+
+    <section class="contact" id="contactus">
+        <h2 class="text-center">Contact Us</h2>
+        <div class="form">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter your name">
+            <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter your phone">
+            <input class="form-input" type="email" name="email" id="email" placeholder="Enter your E-mail">
+            <textarea class="form-input" name="text" id=text" cols="30" rows="10">Elaborate your concern</textarea>
+            <button class="btn btn-dark">Submit</button>
+        </div>
+    </section>
+    <footer>
+        <p class="text-footer">Copyright&copy;2020 All rights reserved.</p>
+    </footer>
+    <!-- <script src="css/hello.js"></script> -->
+    <script>burger = document.querySelector('.burger')
+        navbar = document.querySelector('.navbar')
+        rightnav = document.querySelector('.rightnav')
+        unorderedlist = document.querySelector('.unorderedlist')
+        
+        
+        burger.addEventListener('click' , () => {
+        rightnav.classList.toggle('v-class-resp')
+        unorderedlist.classList.toggle('v-class-resp')
+        navbar.classList.toggle('h-nav-resp')
+        } )</script>
+</body>
+
+</html>
